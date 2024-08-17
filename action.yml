@@ -5,6 +5,10 @@ branding:
   color: orange
 description: Create Docker images and push into a ECR repository.
 inputs:
+  platform:
+    description: The platform of the image (e.g. linux/amd64, linux/arm64, linux/arm/v7)
+    required: false
+    default: linux/arm64
   access_key_id:
     description: The AWS access key id
     required: true
